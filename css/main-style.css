@@ -1,0 +1,226 @@
+/* Обнуление стилей */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0; /* обнуляем внешние отступы */
+    padding: 0; /* обнуляем внутренние отступы */
+    border: 0; /* убираем бордюры */
+    outline: 0; /* убираем контуры */
+    font-size: 100%; /* задаем базовый размер шрифта, значение по умолчанию = 16px */
+    vertical-align: baseline; /* устанавливаем базовое вертикальное выравнивание */
+    background: transparent; /* устанавливаем фон прозрачным */
+    font-family: Arial, Verdana;
+}
+ul,li{
+    list-style: none;
+}
+.clear {
+    clear: both;
+    float: none !important;
+    font-size: 0 !important;
+    height: 0 !important;
+    line-height: 0 !important;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+#wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    width: 940px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px #212121;
+    -webkit-box-shadow: 0 0 30px #212121;
+    -moz-box-shadow: 0 0 30px #212121;
+    behavior: url(ie-css3.htc);
+}
+#wrapper-main {
+    padding-bottom: 100px;
+    text-align: left;
+}
+#wm-header {
+    width: 872px;
+    margin: 0 auto;
+    padding: 15px 25px 25px 33px;
+    box-shadow: inset 0 0 30px #212121;
+    -webkit-box-shadow: inset 0 0 30px #212121;
+    -moz-box-shadow: inset 0 0 30px #212121;
+    behavior: url(ie-css3.htc);
+}
+#wm-header h1{
+    font-size: 26pt;
+    font-weight: lighter;
+    color: #020202;
+    text-shadow: -3px 4px 10px #000;
+    behavior: url(ie-css3.htc);
+    text-decoration: underline;
+}
+#wm-content {
+    padding: 14px 20px 24px 20px;
+}
+.content-header{
+    padding-bottom: 24px;
+}
+.content-header h2{
+    padding-left: 16px;
+    font-size: 20pt;
+    font-weight: lighter;
+    color: #020202;
+    text-shadow: -2px 3px 8px #000;
+    text-decoration: underline;
+}
+.content-gallery {
+    padding: 0px 75px 24px 75px;
+    position: relative;
+    width: 734px;
+    margin: 0 auto;
+}
+.content-gallery .arrow {
+    position: absolute;
+    top: 82px;
+    width: 67px;
+    height: 67px;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 4px;
+}
+.content-gallery a:link, a:visited {
+    color: #2f2e2e;
+    text-decoration: none;
+}
+.content-gallery a:hover {
+    text-decoration: none;
+}
+.content-gallery .left-arrow {
+    left: 0;
+    background: url("../images/btn-sprite.png") no-repeat 0 0;
+}
+.content-gallery .left-arrow:hover {
+    background: url("../images/btn-sprite-2.png") no-repeat -138px 0;
+}
+.content-gallery .right-arrow:hover {
+    background: url("../images/btn-sprite-2.png") no-repeat -207px 0;
+}
+.content-gallery .right-arrow {
+    right: 0;
+    background: url("../images/btn-sprite.png") no-repeat -69px 0;
+}
+.cg-list{
+    width:734px;
+    height: 260px;
+    overflow: hidden;
+}
+ul#list-images {
+    width: 3000px;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+ul#list-images li{
+    position: relative;
+    float: left;
+}
+ul#list-images li img {
+    display: block;
+    width: 230px;
+    height: 230px;
+}
+ul#list-images li {
+    margin-right: 22px;
+}
+ul#list-images li span{
+    width: 230px;
+    height:230px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: inset 0 0 230px #000;
+    -webkit-box-shadow: inset 0 0 230px #000;
+    -moz-box-shadow: inset 0 0 230px #000;
+    behavior: url(ie-css3.htc);
+}
+/* ------- Блок с описанием и большой картинкой -----------*/
+.content-text-block {
+    width: 864px;
+    padding: 18px;
+    box-shadow: inset 0 0 15px #000;
+    -webkit-box-shadow: inset 0 0 15px #000;
+    -moz-box-shadow: inset 0 0 15px #000;
+    behavior: url(ie-css3.htc);
+}
+#tb-bigImage {
+    float: left;
+    width: 432px;
+}
+#tb-bigImage img{
+    width: 432px;
+    height: 500px;
+    box-shadow: 0px 4px 6px 0px #212121, 0px -2px 6px 0px #212121;
+    -webkit-box-shadow: 0px 4px 6px 0px #212121, 0px -2px 6px 0px #212121;
+    -moz-box-shadow: 0px 4px 6px 0px #212121, 0px -2px 6px 0px #212121;
+    behavior: url(ie-css3.htc);
+}
+#tb-article-block {
+    float: right;
+    width: 380px;
+    min-height: 460px;
+    padding: 20px;
+    line-height: 130%;
+    box-shadow: 0px 4px 6px 0px #212121, 0px -2px 6px 0px #212121;
+    -webkit-box-shadow: 0px 4px 6px 0px #212121, 0px -2px 6px 0px #212121;
+    -moz-box-shadow: 0px 4px 6px 0px #212121, 0px -2px 6px 0px #212121;
+    behavior: url(ie-css3.htc);
+}
+#tb-article-block h2{
+    padding-bottom: 15px;
+    text-shadow: -3px 3px 12px #000;
+}
+#tb-article-block h3{
+    padding-bottom: 2px;
+    color: #464645;
+    text-decoration: underline;
+}
+#tb-article-block div{
+    color: #464645;
+    display: block;
+    padding-bottom: 15px;
+}
+#tb-article-block a:link{
+    color: #464645;
+    text-decoration: underline;
+}
+#tb-article-block a:hover{
+    color: #464645;
+    text-decoration: none;
+}
+/* -------  Футер ---------- */
+
+#footer {
+    height: 60px;
+    margin-top: -60px;
+}
+#footer-main {
+    width: 900px;
+    height: 30px;
+    padding: 15px;
+    margin: 0 auto;
+    box-shadow: inset 0 0 30px #212121;
+    -webkit-box-shadow: inset 0 0 30px #212121;
+    -moz-box-shadow: inset 0 0 30px #212121;
+    behavior: url(ie-css3.htc);
+    color: #464645;
+}

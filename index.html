@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main-style.css"/>
+    <title>Портфолио HTML-верстальщика Сердюковой Анны</title>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/lodash.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="wrapper-main">
+            <div id="wm-header">
+                <h1>Портфолио HTML-верстальщика Сердюковой Анны</h1>
+            </div>
+            <div id="wm-content">
+                <div class="content-header">
+                    <h2>Мои работы:</h2>
+                </div>
+                <div class="content-gallery">
+                    <a href="#" class="arrow left-arrow" id="prev"><</a>
+                    <div class="cg-list">
+                        <ul id="list-images">
+                        </ul>
+                    </div>
+                    <a href="#" class="arrow right-arrow" id="next">></a>
+                </div>
+                <div class="content-text-block">
+                    <div id="tb-bigImage"></div>
+                    <div id="tb-article-block"></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"><div id="footer-main">© webminuta.ru</div></div>
+
+<script src="js/projects.js"></script>
+
+<script type="text/template" id="previewImages-template">
+    <% for(var i=0; i<projectsArray.length; i++) { %>
+    <li><img src="<%=projectsArray[i].previewImgSrc%>" alt="<%=projectsArray[i].projectName%>"><span></span></li>
+    <% } %>
+</script>
+
+<script type="text/template" id="projectDiscription-template">
+    <div>
+        <h3>Проект:</h3>
+        <div><%=project.projectName%></div>
+    </div>
+    <div>
+        <h3>Используемые технологии:</h3>
+        <div><%=project.projectTehnogies%></div>
+    </div>
+    <div>
+        <h3>Посмотреть вживую:</h3>
+        <div><a href="<%=project.projectLink%>" target="_blank"><%=project.projectLink%></a></div>
+    </div>
+    <div>
+        <h3>Описание:</h3>
+        <div><%=project.projectDescription%></div>
+    </div>
+</script>
+
+<script type="text/template" id="fullImages-template">
+    <a href="<%=project.projectLink%>" target="_blank"><img src="<%=project.fullImgSrc%>" id="fullImage" alt="<%=project.projectName%>"></a>
+</script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

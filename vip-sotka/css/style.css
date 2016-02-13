@@ -1,0 +1,161 @@
+/* Обнуление стилей */
+html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, font, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0; /* обнуляем внешние отступы */
+    padding: 0; /* обнуляем внутренние отступы */
+	border: 0; /* убираем бордюры */
+	outline: 0; /* убираем контуры */
+	font-size: 100%; /* задаем базовый размер шрифта, значение по умолчанию = 16px */
+	vertical-align: baseline; /* устанавливаем базовое вертикальное выравнивание */
+	background: transparent; /* устанавливаем фон прозрачным */
+	font-family: Arial, Verdana;
+}
+html, body{
+	height: 100%;
+	width: 100%;
+}
+/* Обнуление стилей */
+.clear {
+    clear: both;
+    float: none !important;
+    font-size: 0 !important;
+    height: 0 !important;
+    line-height: 0 !important;
+}
+.le{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+#wrapper {
+	width: 100%;
+	min-height: 100%;
+	background: #bbbd91;
+	font-size: 13px;
+	color: #171717;
+	line-height: 150%; 
+}
+#wrapper p{
+	padding: 0 35px 5px 10px;
+}
+.main-block{
+	width: 552px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 23px 0 22px 0;
+}
+
+.circle-block {
+	position: relative;
+	z-index: 2;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    behavior: url(pie/PIE.htc);
+}
+.mb-header-block{
+	background-color: #fff;
+	padding: 15px 15px 15px 16px;
+}
+.hb-list-images{
+	margin: 0 0 20px 0;
+}
+.hb-lm-img{
+	width: 101px;
+	height: 102px;
+	float: left;
+	margin: 0 4px 0 0;
+}
+.line{
+	width: 532px;
+	height: 1px;
+	background: url(../images/border.gif) repeat-x;
+	margin: 7px 11px 6px 9px;
+}
+.mb-content-block{
+	width: 552px;
+	min-height: 100%;
+	background-color: #fff;
+}
+.hb-discount-block{
+	padding: 0 13px 0 14px;
+}
+.hd-title-block{
+	margin: 0 0 20px 0;
+}
+h1{
+	color: #db3e19;
+	font-size: 23px;
+	font-weight: bold;
+	padding: 0 0 0 10px;
+}
+h2{
+	font-size: 15px;
+	padding: 0 30px 10px 10px;
+	font-weight: bold;
+	
+}
+h3{
+	font-size: 18px;
+	font-weight: 100;
+	color: 171717;
+	padding: 0 30px 0 10px;
+}
+h4{
+	font-size: 15px;
+	color: #db3e19;
+	font-weight: 100;
+	padding: 0 30px 8px 10px;
+}
+.hd-client{
+	margin: 0 0 18px 0;
+}
+.hd-client table{
+	border-collapse: collapse;
+	width: 100%;
+	line-height: 180%;
+}
+.hd-client table, td, tr{
+	border: 1px #bfc2c4 solid;
+}
+.hd-client tr.color-line{
+	background: #f4f3f3;
+}
+.hd-client td{
+	padding: 0 0 0 10px;
+}
+.hd-discount a, a:link{
+	color:#171717;
+	text-decoration: underline;
+}
+.hd-discount a:hover{
+	color:#171717;
+	text-decoration: none; 
+}
+.hd-percent{
+	font-size: 16px;
+	font-weight: bold;
+}
+.hd-date{
+	font-size: 15px;
+	font-weight: bold;
+}
+.cb-shops-block{
+	padding: 19px 15px 30px 30px;
+}
+.ks-text{
+	margin: 0 0 8px 0;
+}
+.ks-road{
+	padding: 25px 0 0 0;
+}
+.ksr-title{
+	margin: 0 0 12px 0;
+}
